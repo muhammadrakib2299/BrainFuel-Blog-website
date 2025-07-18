@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 function NavBar() {
+  const [theme, setTheme] = useState("light");
+
+  const handleToggleTheme = (e) => {
+    if (e.target.checked) {
+      setTheme("sysnwave");
+    } else {
+      setTheme("light");
+    }
+  };
+  console.log(theme);
   return (
     <>
       <nav>
@@ -24,8 +34,8 @@ function NavBar() {
             </ul>
             <label className="toggle text-base-content">
               <input
+                onChange={handleToggleTheme}
                 type="checkbox"
-                value="synthwave"
                 className="theme-controller"
               />
 
