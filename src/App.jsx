@@ -5,11 +5,7 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <>
-      <div>
-        <Home></Home>
-        <Blogs></Blogs>
-        <Bookmarks></Bookmarks>
-      </div>
+      <div></div>
     </>
   );
 }
