@@ -33,14 +33,23 @@ function NavBar() {
             </NavLink>
           </div>
           <div className="flex-none">
-            <ul className="menu menu-horizontal px-1 text-lg">
-              <NavLink to="/" className="px-3 font-bold text-xl">
-                Home
+            <ul className="menu menu-horizontal px-3 text-lg font-bold gap-5">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "text-primary" : "")}
+              >
+                Home{" "}
               </NavLink>
-              <NavLink to="/blogs" className="px-3 font-bold text-xl">
+              <NavLink
+                to="/blogs"
+                className={({ isActive }) => (isActive ? "text-primary" : "")}
+              >
                 Blogs
               </NavLink>
-              <NavLink to="/bookmarks" className="px-3 font-bold text-xl">
+              <NavLink
+                to="/bookmarks"
+                className={({ isActive }) => (isActive ? "text-primary" : "")}
+              >
                 Bookmarks
               </NavLink>
             </ul>
