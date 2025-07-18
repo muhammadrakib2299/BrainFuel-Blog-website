@@ -5,9 +5,7 @@ function Home() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="h-20">
-        <NavBar></NavBar>
-      </nav>
+      <NavBar></NavBar>
     </div>
   );
 }

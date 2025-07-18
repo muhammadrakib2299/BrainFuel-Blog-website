@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const [theme, setTheme] = useState("light");
@@ -21,24 +22,27 @@ function NavBar() {
   };
   return (
     <>
-      <nav>
+      <nav className="h-20">
         <div className="navbar bg-base-100 shadow-lg px-10 fixed z-10">
           <div className="flex-1">
-            <a className="btn btn-ghost text-3xl gap-0 text-primary font-bold">
+            <NavLink
+              to="./"
+              className="btn btn-ghost text-3xl gap-0 text-primary font-bold"
+            >
               Brain<span className="text-secondary">fuel</span>
-            </a>
+            </NavLink>
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1 text-lg">
-              <li className="font-bold">
-                <a>Home</a>
-              </li>
-              <li className="font-bold text-primary">
-                <a>Blogs</a>
-              </li>
-              <li className="font-bold">
-                <a>Bookmarks</a>
-              </li>
+              <NavLink to="/" className="px-3 font-bold text-xl">
+                Home
+              </NavLink>
+              <NavLink to="/blogs" className="px-3 font-bold text-xl">
+                Blogs
+              </NavLink>
+              <NavLink to="/bookmarks" className="px-3 font-bold text-xl">
+                Bookmarks
+              </NavLink>
             </ul>
             <label className="toggle text-base-content">
               <input
