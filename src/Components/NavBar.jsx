@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function NavBar() {
   const [theme, setTheme] = useState("light");
 
+  useEffect(() => {
+    // set the theme intolocal
+    localStorage.setItem("theme", theme);
+    // get the theme from local
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+
+  // Handle theme button using function
   const handleToggleTheme = (e) => {
     if (e.target.checked) {
-      setTheme("sysnwave");
+      setTheme("synthwave");
     } else {
       setTheme("light");
     }
   };
-  console.log(theme);
   return (
     <>
       <nav>
