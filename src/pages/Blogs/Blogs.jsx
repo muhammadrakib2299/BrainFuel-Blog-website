@@ -5,7 +5,6 @@ import SingleBlogCart from "../../Components/SingleBlogCart";
 function Blogs() {
   // Loading data from fetch API in main jsx router
   const blogs = useLoaderData();
-  console.log(blogs);
   return (
     <div className="py-10">
       <section className="text-gray-100">
@@ -35,7 +34,9 @@ function Blogs() {
           </a>
 
           <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <SingleBlogCart></SingleBlogCart>
+            {blogs.map((blog) => (
+              <SingleBlogCart key={blog.id} blog={blog}></SingleBlogCart>
+            ))}
           </div>
         </div>
       </section>

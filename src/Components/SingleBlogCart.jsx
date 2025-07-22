@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 function SingleBlogCart() {
   return (
     <div>
-      <Link
-        rel="noopener noreferrer"
-        href="#"
-        className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900"
-      >
+      <Link className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900">
         <img
           role="presentation"
           className="object-cover w-full rounded h-44 bg-gray-500"
