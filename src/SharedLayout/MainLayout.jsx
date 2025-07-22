@@ -10,7 +10,10 @@ function MainLayout() {
       <NavBar></NavBar>
 
       {/* Packet */}
-      <Outlet></Outlet>
+      <div>
+        <Outlet></Outlet>
+      </div>
+
       {/* Foote */}
       <Footer></Footer>
     </div>
