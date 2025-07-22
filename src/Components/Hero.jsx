@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-auto">
             <h1 className="text-5xl font-bold">

@@ -1,12 +1,14 @@
 import React from "react";
 import NavBar from "../../Components/NavBar";
 import Hero from "../../Components/Hero";
+import svg from "../../assets/wave.svg";
 
 function Home() {
   return (
     <div>
-      <div>
+      <div className="relative">
         <Hero></Hero>
+        <img className="absolute bottom-0 w-full" src={svg} alt="" />
       </div>
     </div>
   );
