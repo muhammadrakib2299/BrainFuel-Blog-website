@@ -16,7 +16,7 @@ function Hero() {
               self-growth, and beyond. Whether you're here to learn, explore, or
               just take a mental break, you're in the right place.
             </p>
-            <div className="flex justify-center items-center content-center gap-2 pt-2">
+            <div className="flex justify-center items-center content-center gap-5 pt-2">
               <Link
                 to="./blogs"
                 class="relative inline-block px-4 py-2 font-medium group"
