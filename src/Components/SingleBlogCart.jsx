@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import placeholder from "../assets/404.jpg";
 
 function SingleBlogCart({ blog }) {
-  const { cover_image, title, description, published_at } = blog;
+  const { cover_image, title, description, published_at, id } = blog;
 
   return (
     <div className="bg-gray-900 p-3 rounded-lg">
       <Link
-        to={`/blog/$(id)`}
+        to={`/blog/${id}`}
         className="max-w-sm mx-auto group hover:no-underline focus:no-underline"
       >
         <img
