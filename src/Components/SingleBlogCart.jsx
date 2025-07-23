@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function SingleBlogCart({ blog }) {
-  const { cover_image, title, description, published_at, id } = blog;
+  const { cover_image, title, description, published_at } = blog;
 
   return (
     <div>
