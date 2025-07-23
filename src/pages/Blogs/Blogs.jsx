@@ -11,7 +11,7 @@ function Blogs() {
         <div className="container max-w-7xl p-6 mx-auto space-y-6 sm:space-y-12">
           {/* Show the 1st blog */}
           <Link
-            to={`blogs/${blogs[0].id}`}
+            to={`/blog/${blogs[0].id}`}
             className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-gray-900"
           >
             <img
