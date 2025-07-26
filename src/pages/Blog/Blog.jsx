@@ -11,7 +11,6 @@ function Blog() {
     reading_time_minutes,
     comments_count,
     public_reactions_count,
-    tags,
   } = blog;
   return (
     <div className="p-5">
