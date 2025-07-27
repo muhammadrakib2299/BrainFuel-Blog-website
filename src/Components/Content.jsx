@@ -2,10 +2,12 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Blog from "../pages/Blog/Blog";
 import placeholder from "../assets/404.jpg";
+import Markdown from "https://esm.sh/react-markdown@10";
+import rehypeRaw from "rehype-raw";
 
 function Content() {
   const blog = useLoaderData();
-  const { cover_image, title, description, published_at, tags } = blog;
+  const { cover_image, title, tags, body_html } = blog;
   return (
     <div>
       <div className="mx-auto group hover:no-underline focus:no-underline">
@@ -30,11 +32,9 @@ function Content() {
           <h3 className="text-2xl font-semibold  group-focus:underline">
             {title}
           </h3>
-          <span className="text-xs text-white">
-            {" "}
-            {new Date(published_at).toLocaleDateString()}
-          </span>
-          <p className="text-white py-4">{description}</p>
+          <div className="py-4">
+            <Markdown rehypePlugins={[rehypeRaw]}>{body_html}</Markdown>
+          </div>
         </div>
       </div>
     </div>
