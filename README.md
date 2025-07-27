@@ -1,6 +1,30 @@
 # 🧠 BrainFuel Blogs
 
-A modern blog website built with **React.js** to share developer-centric articles and bookmark your favorite posts.
+
+Live Site: https://silver-starship-69be0a.netlify.app/
+
+
+Project Name: BrainFuel Blogs
+
+Stack Used: React.js
+
+Features Noticed:
+
+Home, Blogs, and Bookmarks sections
+
+Modern UI with a professional design
+
+Blog detail page with rich content and images
+
+Bookmark functionality
+
+Dark/light theme toggle (spotted in the navbar)
+
+Footer with copyright
+
+Your name is listed as the developer — perfect for personal branding!
+
+
 
 ## 🚀 Features
 - Blog list and detail view
@@ -9,8 +33,6 @@ A modern blog website built with **React.js** to share developer-centric article
 - Beautiful UI and smooth navigation
 - Fully responsive layout
 
-## 📸 Screenshots
-./1.png
 
 ## 🛠 Tech Stack
 - React.js
@@ -18,4 +40,8 @@ A modern blog website built with **React.js** to share developer-centric article
 - React Router
 - LocalStorage (for bookmarks)
 
-## 📂 Folder Structure
+
+## 📸 Screenshots
+![Simple Shopping Cart Screenshot](./1.png)
+![Simple Shopping Cart Screenshot](./2.png)
+
