@@ -13,7 +13,7 @@ function Author() {
   } = blog.user;
   return (
     <div className="py-5">
-      <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex flex-col justify-center p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
         <img
           src={profile_image}
           alt=""
@@ -28,6 +28,8 @@ function Author() {
           </div>
           <div className="flex justify-center pt-2 space-x-4 align-center">
             <a
+              rel="noopener noreferrer"
+              target="blank"
               href={`https://github.com/${github_username}`}
               aria-label="GitHub"
               className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
@@ -41,6 +43,8 @@ function Author() {
               </svg>
             </a>
             <a
+              rel="noopener noreferrer"
+              target="blank"
               href={website_url}
               aria-label="Dribble"
               className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
@@ -55,7 +59,9 @@ function Author() {
             </a>
 
             <a
-              href={twitter_username}
+              rel="noopener noreferrer"
+              target="blank"
+              href={`https://x.com/${twitter_username}`}
               aria-label="Twitter"
               className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
             >
