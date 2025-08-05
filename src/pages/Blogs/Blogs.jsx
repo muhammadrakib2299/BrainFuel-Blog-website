@@ -1,10 +1,16 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import SingleBlogCart from "../../Components/SingleBlogCart";
+import Loader from "../../Components/Loader";
 
 function Blogs() {
   // Loading data from fetch API in main jsx router
   const blogs = useLoaderData();
+
+  // Showing loading spinner in UI
+  const navigation = useNavigation();
+  if (navigation.state === "loading") return <Loader></Loader>;
+
   return (
     <div className="py-10">
       <section className="text-gray-100">

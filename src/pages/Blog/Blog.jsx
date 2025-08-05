@@ -3,7 +3,6 @@ import { Link, Outlet, useLoaderData } from "react-router-dom";
 
 function Blog() {
   const [tablIndex, setTabIndex] = useState(0);
-
   const blog = useLoaderData();
   const {
     title,
@@ -12,6 +11,7 @@ function Blog() {
     comments_count,
     public_reactions_count,
   } = blog;
+
   return (
     <div className="p-5">
       <div className="max-w-4xl px-6 py-16 mx-auto space-y-12">
