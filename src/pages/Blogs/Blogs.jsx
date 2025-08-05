@@ -38,7 +38,7 @@ function Blogs() {
 
           {/* Single blog container */}
           <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {blogs.map((blog) => (
+            {blogs.slice(1, 25).map((blog) => (
               <SingleBlogCart key={blog.id} blog={blog}></SingleBlogCart>
             ))}
           </div>

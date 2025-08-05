@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { MdOutlineBookmarkAdd } from "react-icons/md";
+import { saveBlog } from "../../utils";
 
 function Blog() {
   const [tablIndex, setTabIndex] = useState(0);
   const blog = useLoaderData();
+
   const {
     title,
     published_at,
@@ -11,6 +14,10 @@ function Blog() {
     comments_count,
     public_reactions_count,
   } = blog;
+
+  const handleBookMark = (blog) => {
+    saveBlog(blog);
+  };
 
   return (
     <div className="p-5">
@@ -38,6 +45,7 @@ function Blog() {
           {/* Tabs bar */}
           <div>
             <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
+              {/* Content tab */}
               <Link
                 onClick={() => setTabIndex(0)}
                 className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
@@ -58,6 +66,7 @@ function Blog() {
                 </svg>
                 <span>Content</span>
               </Link>
+              {/* Author tab */}
               <Link
                 to="author"
                 onClick={() => setTabIndex(1)}
@@ -80,6 +89,13 @@ function Blog() {
                 </svg>
                 <span>Author</span>
               </Link>
+              {/* Bookmarks Tab */}
+              <div
+                onClick={() => handleBookMark(blog)}
+                className="bg-primary ml-5 rounded-full text-3xl cursor-pointer text-white p-2 overflow-hidden hover:opacity-50 hover:scale-105"
+              >
+                <MdOutlineBookmarkAdd />
+              </div>
             </div>
           </div>
           {/* Outlet */}
