@@ -7,7 +7,7 @@ function Hero() {
         <div className="hero-content text-center">
           <div className="max-w-auto">
             <h1 className="text-5xl font-bold">
-              \Mahbub to
+              Welcome to
               <span className="text-secondary">Brain Fuels Blogs</span>
             </h1>
             <p className="py-6 max-w-lg text-center mx-auto">
