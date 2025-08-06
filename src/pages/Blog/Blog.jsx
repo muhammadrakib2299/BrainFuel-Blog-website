@@ -20,7 +20,7 @@ function Blog() {
   };
 
   return (
-    <div className="p-5">
+    <div className="px-5 py-15">
       <div className="max-w-4xl px-6 py-16 mx-auto space-y-12">
         {/* Blog heading */}
         <article className="space-y-8 dark:bg-gray-100 dark:text-gray-900">

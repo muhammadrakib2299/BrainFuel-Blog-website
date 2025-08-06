@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import placeholder from "../assets/404.jpg";
 import { MdDeleteForever } from "react-icons/md";
 
-function SingleBlogCart({ blog, deletable }) {
+function SingleBlogCart({ blog, deletable, handleDeleteButton }) {
   const { cover_image, title, description, published_at, id } = blog;
 
   return (
@@ -31,7 +31,10 @@ function SingleBlogCart({ blog, deletable }) {
           </div>
         </Link>
         {deletable && (
-          <div className="absolute bg-primary p-3 rounded-full -top-5 -right-5 cursor-pointer hover:scale-105">
+          <div
+            onClick={() => handleDeleteButton(id)}
+            className="absolute bg-primary p-3 rounded-full -top-5 -right-5 cursor-pointer hover:scale-105"
+          >
             <MdDeleteForever
               size={23}
               className="text-white group-hover:text-primary"

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div>
+    <div className="p-5">
       <div className="hero min-h-[calc(100vh-150px)]">
         <div className="hero-content text-center">
           <div className="max-w-auto">
