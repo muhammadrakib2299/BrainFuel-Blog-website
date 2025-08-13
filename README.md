@@ -1,47 +1,36 @@
-# 🧠 BrainFuel Blogs
+# ​ BrainFuel Blogs
 
+A sleek, modern blogging platform crafted with **React.js**, featuring a clean UI, intuitive navigation, and thoughtful user experience.
 
-Live Site: https://silver-starship-69be0a.netlify.app/
+##  Live Demo
+Check it out here: [Live Demo](https://brain-fuel-blog-website.vercel.app/)
 
+##  Features
+- Blog listing & detailed view with images and author info  
+- Bookmarking system (powered by LocalStorage)  
+- Light/Dark mode toggle  
+- Fully responsive with polished UI  
 
-Project Name: BrainFuel Blogs
+##  Tech Stack
+- React.js  
+- Tailwind CSS + daisyUI  
+- React Router  
+- LocalStorage  
 
-Stack Used: React.js
+##  Screenshots
+![BrainFuel Blogs Screenshot 1](./1.png)  
+![BrainFuel Blogs Screenshot 2](./2.png)  
 
-Features Noticed:
+##  Installation & Usage
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/brainfuel-blogs.git
 
-Home, Blogs, and Bookmarks sections
+# 2. Navigate into the project
+cd brainfuel-blogs
 
-Modern UI with a professional design
+# 3. Install dependencies
+npm install
 
-Blog detail page with rich content and images
-
-Bookmark functionality
-
-Dark/light theme toggle (spotted in the navbar)
-
-Footer with copyright
-
-Your name is listed as the developer — perfect for personal branding!
-
-
-
-## 🚀 Features
-- Blog list and detail view
-- Bookmark system
-- Light/Dark mode toggle
-- Beautiful UI and smooth navigation
-- Fully responsive layout
-
-
-## 🛠 Tech Stack
-- React.js
-- CSS Modules / Tailwind CSS
-- React Router
-- LocalStorage (for bookmarks)
-
-
-## 📸 Screenshots
-![Simple Shopping Cart Screenshot](./1.png)
-![Simple Shopping Cart Screenshot](./2.png)
-
+# 4. Start the development server
+npm start

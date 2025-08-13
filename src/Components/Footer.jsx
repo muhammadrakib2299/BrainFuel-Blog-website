@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <p className="py-8 text-center bg-black shadow-lg font-bold text-white">
+      <p className="py-8 text-center bg-black font-bold text-white">
         Copyright @ 2025 - All reserved by Brain Fuel Blogs | Developed by Md.
         Rakib
       </p>
